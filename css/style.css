@@ -1,0 +1,550 @@
+
+/*PARA TODAS LAS PAGINAS*/
+*{
+    margin: 0%;
+    font-family: 'Public Sans', sans-serif;
+}
+
+/**como hago para centrarlo?????*/
+header {
+    background-color: #A791BF ;
+    height: 4vw;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-evenly;*/
+}
+header nav {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav h1 {
+    font-size: 40px;
+    display: flex;
+}
+header nav div ul {
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+header nav div ul li {
+    margin: 0px 20px;
+}
+a{
+    text-decoration-line: none;
+    color: #000000;
+}
+
+body {
+    background-color: #000000;
+}
+
+
+
+
+/*INDEX*/
+
+/*IMG PORTADA*/
+.portada .img-index-portada {
+    width: 100%;
+}
+/*IMGAGENES*/ 
+.img-index {
+    width: 16vw;
+    height: 10vw;
+}
+/*PROPIEDADES DECORATIVAS*/
+.portada .parrafo-principal-index {
+    font-size: 28px;
+    font-weight: lighter;
+
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+}
+.contenedor-index .article-index-parrafo .primer-parrafo-index 
+, .segundo-parrafo-index
+, .tercer-parrafo-index {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #ffffff;
+    border: solid 3px #A791BF;
+    width: 38vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-index {
+    margin: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/*.div-index-img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.prueba-index {
+    display: flex;
+    justify-content: space-around;
+}*/
+
+
+
+
+
+
+
+/*THE ERAS TOUR*/
+
+/*IMG PORTADA*/
+.portada-theerastour .img-portada-theerastour {
+    width: 100%;
+}
+.portada-theerastour p {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    transform: translate(-3%, -3%);
+}    
+.portada-theerastour {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/*FECHAS*/
+.section-theerastour {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.section-theerastour .div-theerastour ul li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.div-titulo-theerastour h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-top: 3px solid #A791BF;
+    border-bottom: 3px solid #A791BF;
+}
+
+.section-theerastour-p p {
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*DISCOGRAFIA*/
+
+/*IMG DISCOGRAFIA COVER*/ 
+.img-discografia {
+    width: 10vw;
+    height: 10vw;
+    margin-bottom: 10px;
+}
+
+
+/*DEBUT ALBUM*/
+.section-discografia-debut {
+    background-color: #A5E4E8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.section-discografia-debut .article-discografia-debut ul li {
+    list-style: none;
+    font-weight: lighter;
+    font-size: 24px;
+}
+.section-discografia-debut .article-discografia-debut-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-debut .article-discografia-debut-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.article-discografia-debut , .article-discografia-debut-img ,
+.article-discografia-speaknow , .article-discografia-speaknow-img ,
+.article-discografia-1989 , .article-discografia-1989-img ,
+.article-discografia-reputation , .article-discografia-reputation-img ,
+.article-discografia-lover , .article-discografia-lover-img ,
+.article-discografia-folklore , .article-discografia-folklore-img ,
+.article-discografia-evermore , .article-discografia-evermore-img ,
+.article-discografia-fearless , .article-discografia-fearless-img ,
+.article-discografia-red , .article-discografia-red-img ,
+.article-discografia-midnights , .article-discografia-midnights-img {
+    width: 30vw;
+}
+
+
+
+
+
+/*SPEAK NOW*/
+.section-discografia-speaknow {
+    background-color: #B7A4BF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.section-discografia-speaknow .article-discografia-speaknow ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-speaknow .article-discografia-speaknow-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-speaknow .article-discografia-speaknow-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*1989*/
+.section-discografia-1989 {
+    background-color: #D6ECF1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-1989 .article-discografia-1989 ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-1989 .article-discografia-1989-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-1989 .article-discografia-1989-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*REPUTATION*/
+.section-discografia-reputation {
+    background-color: #587060;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-reputation .article-discografia-reputation ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-reputation .article-discografia-reputation-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-reputation .article-discografia-reputation-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*LOVER*/
+.section-discografia-lover {
+    background-color: #FFCDD8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-lover .article-discografia-lover ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-lover .article-discografia-lover-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-lover .article-discografia-lover-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*FOLKLORE*/
+.section-discografia-folklore {
+    background-color: #DBDBDB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-folklore .article-discografia-folklore ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-folklore .article-discografia-folklore-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-folklore .article-discografia-folklore-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*EVERMORE*/
+.section-discografia-evermore {
+    background-color: #A57156;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-evermore .article-discografia-evermore ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-evermore .article-discografia-evermore-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-evermore .article-discografia-evermore-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*FEARLESS*/
+.section-discografia-fearless {
+    background-color: #D3BB99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-fearless .article-discografia-fearless ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-fearless .article-discografia-fearless-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-fearless .article-discografia-fearless-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*RED*/
+.section-discografia-red {
+    background-color: #B44949;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-red .article-discografia-red ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-red .article-discografia-red-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-red .article-discografia-red-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*MIDNIGHTS*/
+.section-discografia-midnights {
+    background-color: #434662;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-discografia-midnights .article-discografia-midnights ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.section-discografia-midnights .article-discografia-midnights-img h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.section-discografia-midnights .article-discografia-midnights-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/*GALERIA*/
+
+/*IMG PORTADA*/
+.portada-galeria .img-portada-galeria {
+    width: 100%;
+}
+
+.article-galeria .video-youtube {
+    width: 25vw;
+    height: 12vw;
+}
+
+/*IMG GALERIA*/
+.section-galeria .article-galeria .img-galeria {
+    width: 25vw;
+    height: 12vw;
+}
+.section-galeria-youtube {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0px;
+}
+.section-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+}
+
+
+
+
+
+
+/*CONTACTO*/
+.main-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+/*prueba*/
+.section-contacto-formulario {
+    background-color: #756685;
+    color: #ffffff;
+    width: 80vw;
+    height: 33vw;
+    margin: 95px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-contacto-formulario .formulario {
+    font-weight: lighter;
+}
+
+
+
+
+/*PIE DE PAGINA*/
+footer {
+    background-color: #A791BF ;
+    color: #000000;
+    font-size: 20px;
+    font-weight: lighter;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer div ul li {
+    width: 2vw;
+    height: 2vw;
+    display: inline-block;
+}
+
