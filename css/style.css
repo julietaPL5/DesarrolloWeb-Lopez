@@ -1,37 +1,38 @@
 
 /*PARA TODAS LAS PAGINAS*/
 *{
-    margin: 0%;
+    margin: 0;
     font-family: 'Public Sans', sans-serif;
 }
 
-/**como hago para centrarlo?????*/
 header {
     background-color: #A791BF ;
-    height: 4vw;
+    height: 65px;
     /*display: flex;
     align-items: center;
     justify-content: space-evenly;*/
 }
 header nav {
-    margin: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 header nav h1 {
     font-size: 40px;
-    display: flex;
+    margin-bottom: 0;
+    margin-left: 5px;
 }
 header nav div ul {
     list-style: none;
     font-size: 22px;
     font-weight: bold;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
 }
 header nav div ul li {
-    margin: 0px 20px;
+    margin: 0 20px;
 }
 a{
     text-decoration-line: none;
@@ -42,6 +43,85 @@ body {
     background-color: #000000;
 }
 
+
+@media (max-width: 1440px) {
+    header nav h1 {
+        font-size: 35px;
+    }
+    header nav div ul {
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px) {
+    header nav h1 {
+        font-size: 30px;
+    }
+    header nav div ul {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    header nav h1 {
+        font-size: 25px;
+    }
+    header nav div ul {
+        font-size: 13px;
+    }
+}
+@media (max-width: 700px) {
+    header {
+        height: 60px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /*no queda centrado*/
+    }
+}
+@media (max-width: 530px) {
+    header nav h1 {
+        font-size: 22px;
+    }
+    header nav div ul {
+        font-size: 10px;
+    }
+}
+@media (max-width: 470px) {
+    header {
+        height: 55px;
+    }
+    header nav h1 {
+        font-size: 20px;
+    }
+    header nav div ul {
+        font-size: 8px;
+    }
+    .nav-the-eras-tour {
+        text-align: center;
+    }
+}
+@media (max-width: 400px) {
+    header {
+        height: 50px;
+    }
+    header nav h1 {
+        font-size: 18px;
+    }
+    header nav div ul {
+        font-size: 6px;
+    }
+}
+@media (max-width: 355px) {
+    header {
+        height: 42px;
+    }
+    header nav h1 {
+        font-size: 15px;
+    }
+    header nav div ul {
+        font-size: 4px;
+    }
+}
 
 
 
@@ -60,7 +140,6 @@ body {
 .portada .parrafo-principal-index {
     font-size: 28px;
     font-weight: lighter;
-
     color: #ffffff;
     text-align: center;
     margin: 10px;
@@ -77,13 +156,13 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    margin: 0;
 }
 .contenedor-index {
     margin: 35px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 /*.div-index-img {
     margin-left: 10px;
@@ -93,6 +172,55 @@ body {
     display: flex;
     justify-content: space-around;
 }*/
+
+/*MEDIA QUERY*/
+@media (max-width: 1900px) {
+    .portada .parrafo-principal-index {
+        font-size: 24px;
+    }
+    .contenedor-index .article-index-parrafo 
+    .primer-parrafo-index 
+    , .segundo-parrafo-index 
+    , .tercer-parrafo-index {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1500px) {
+    .portada .parrafo-principal-index {
+        font-size: 22px;
+    }
+    .contenedor-index .article-index-parrafo 
+    .primer-parrafo-index 
+    , .segundo-parrafo-index 
+    , .tercer-parrafo-index {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1340px) {
+    .portada .parrafo-principal-index {
+        font-size: 20px;
+    }
+    .contenedor-index .article-index-parrafo 
+    .primer-parrafo-index 
+    , .segundo-parrafo-index 
+    , .tercer-parrafo-index {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1200px) {
+    .portada .parrafo-principal-index {
+        font-size: 20px;
+    }
+    .contenedor-index .article-index-parrafo 
+    .primer-parrafo-index 
+    , .segundo-parrafo-index 
+    , .tercer-parrafo-index {
+        font-size: 16px; 
+    }
+
+}
+
+
 
 
 
@@ -165,308 +293,158 @@ body {
 .img-discografia {
     width: 10vw;
     height: 10vw;
-    margin-bottom: 10px;
 }
+
+/*TITULO Y CANCIONES*/
+.canciones-discografia {
+    list-style: none;
+    font-weight: lighter;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.album-titulo-discografia {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
 
 
 /*DEBUT ALBUM*/
 .section-discografia-debut {
     background-color: #A5E4E8;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
-.section-discografia-debut .article-discografia-debut ul li {
-    list-style: none;
-    font-weight: lighter;
-    font-size: 24px;
-}
-.section-discografia-debut .article-discografia-debut-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-debut .article-discografia-debut-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-
-
-.article-discografia-debut , .article-discografia-debut-img ,
-.article-discografia-speaknow , .article-discografia-speaknow-img ,
-.article-discografia-1989 , .article-discografia-1989-img ,
-.article-discografia-reputation , .article-discografia-reputation-img ,
-.article-discografia-lover , .article-discografia-lover-img ,
-.article-discografia-folklore , .article-discografia-folklore-img ,
-.article-discografia-evermore , .article-discografia-evermore-img ,
-.article-discografia-fearless , .article-discografia-fearless-img ,
-.article-discografia-red , .article-discografia-red-img ,
-.article-discografia-midnights , .article-discografia-midnights-img {
-    width: 30vw;
-}
-
-
-
-
 
 /*SPEAK NOW*/
 .section-discografia-speaknow {
     background-color: #B7A4BF;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
-
-.section-discografia-speaknow .article-discografia-speaknow ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-speaknow .article-discografia-speaknow-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-speaknow .article-discografia-speaknow-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*1989*/
 .section-discografia-1989 {
     background-color: #D6ECF1;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-1989 .article-discografia-1989 ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-1989 .article-discografia-1989-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-1989 .article-discografia-1989-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*REPUTATION*/
 .section-discografia-reputation {
     background-color: #587060;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-reputation .article-discografia-reputation ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-reputation .article-discografia-reputation-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-reputation .article-discografia-reputation-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*LOVER*/
 .section-discografia-lover {
     background-color: #FFCDD8;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-lover .article-discografia-lover ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-lover .article-discografia-lover-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-lover .article-discografia-lover-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*FOLKLORE*/
 .section-discografia-folklore {
     background-color: #DBDBDB;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-folklore .article-discografia-folklore ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-folklore .article-discografia-folklore-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-folklore .article-discografia-folklore-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*EVERMORE*/
 .section-discografia-evermore {
     background-color: #A57156;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-evermore .article-discografia-evermore ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-evermore .article-discografia-evermore-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-evermore .article-discografia-evermore-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*FEARLESS*/
 .section-discografia-fearless {
     background-color: #D3BB99;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-fearless .article-discografia-fearless ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-fearless .article-discografia-fearless-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-fearless .article-discografia-fearless-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*RED*/
 .section-discografia-red {
     background-color: #B44949;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
 }
-
-.section-discografia-red .article-discografia-red ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-red .article-discografia-red-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-red .article-discografia-red-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 
 /*MIDNIGHTS*/
 .section-discografia-midnights {
     background-color: #434662;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
-
-}
-
-.section-discografia-midnights .article-discografia-midnights ul li {
-    list-style: none;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-.section-discografia-midnights .article-discografia-midnights-img h3 {
-    font-size: 30px;
-    font-style: italic;
-}
-
-.section-discografia-midnights .article-discografia-midnights-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 
 
+/*MEDIA QUERY*/
 
+
+
+@media (max-width: 1440px) {
+    .canciones-discografia {
+        font-size: 20px;
+    }
+    .album-titulo-discografia {
+        font-size: 25px;
+    }
+}
+@media (max-width: 900px) {
+    .canciones-discografia {
+        font-size: 15px;
+    }
+    .album-titulo-discografia {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .canciones-discografia {
+        font-size: 10px;
+    }
+    .album-titulo-discografia {
+        font-size: 15px;
+    }
+}
+@media (max-width: 570px) {
+    .canciones-discografia {
+        font-size: 8px;
+    }
+    .album-titulo-discografia {
+        font-size: 12px;
+    }
+}
+@media (max-width: 490px) {
+    .canciones-discografia {
+        font-size: 6px;
+    }
+    .album-titulo-discografia {
+        font-size: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .canciones-discografia {
+        font-size: 4px;
+    }
+    .album-titulo-discografia {
+        font-size: 8px;
+    }
+}
 
 
 
@@ -535,16 +513,62 @@ footer {
     color: #000000;
     font-size: 20px;
     font-weight: lighter;
-    height: 5vw;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-
+footer div ul {
+    margin: 0;
+    padding: 0;
+}
 footer div ul li {
     width: 2vw;
     height: 2vw;
     display: inline-block;
 }
 
+footer div p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    footer div p {
+        font-size: 15px;
+    }
+    footer {
+        height: 60px;
+        width: 101%;
+    }
+}
+
+@media (max-width: 770px) {
+    footer div p {
+        font-size: 10px;
+    }
+    footer {
+        height: 40px;
+        width: 101%;
+    }
+}
+
+@media (max-width: 570px) {
+    footer div p {
+        font-size: 7px;
+    }
+    footer {
+        height: 30px;
+        width: 102%;
+    }
+}
+
+@media (max-width: 490px) {
+    footer div p {
+        font-size: 5px;
+    }
+    footer {
+        height: 25px;
+        width: 103%;
+    }
+}
