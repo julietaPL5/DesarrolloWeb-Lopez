@@ -679,7 +679,6 @@ footer div p {
     }
     footer {
         height: 60px;
-        width: 100%;
     }
     footer div ul li {
         width: 3.5vw;
@@ -693,7 +692,6 @@ footer div p {
     }
     footer {
         height: 50px;
-        width: 101%;
     }
 }
 
@@ -703,7 +701,6 @@ footer div p {
     }
     footer {
         height: 40px;
-        width: 102%;
     }
     footer div ul li {
         width: 4vw;
@@ -717,7 +714,6 @@ footer div p {
     }
     footer {
         height: 35px;
-        width: 103%;
     }
     footer div ul li {
         width: 4.7vw;
