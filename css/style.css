@@ -8,8 +8,6 @@
 header {
     background-color: #A791BF ;
     height: 65px;
-    position: sticky;
-    top: 0;
     /*display: flex;
     align-items: center;
     justify-content: space-evenly;*/
@@ -541,14 +539,14 @@ body {
 }
 
 .article-galeria .video-youtube {
-    width: 26vw;
-    height: 13vw;
+    width: 28vw;
+    height: 15vw;
 }
 
 /*IMG GALERIA*/
 .section-galeria .article-galeria .img-galeria {
-    width: 25vw;
-    height: 12vw;
+    width: 27vw;
+    height: 14vw;
 }
 .section-galeria-youtube {
     display: flex;
@@ -563,42 +561,42 @@ body {
 
 @media (max-width: 1024px) {
     .section-galeria .article-galeria .img-galeria {
-        width: 26vw;
-        height: 13vw;
+        width: 28vw;
+        height: 14.5vw;
     }
     .article-galeria .video-youtube {
-        width: 27vw;
-        height: 15vw;
+        width: 29vw;
+        height: 17vw;
     }
 }
 @media (max-width: 700px) {
     .section-galeria .article-galeria .img-galeria {
-        width: 27vw;
-        height: 14vw;
-    }
-    .article-galeria .video-youtube {
-        width: 28vw;
-        height: 16vw;
-    }
-}
-@media (max-width: 500px) {
-    .section-galeria .article-galeria .img-galeria {
         width: 29vw;
-        height: 16vw;
+        height: 15.5vw;
     }
     .article-galeria .video-youtube {
         width: 30vw;
         height: 18vw;
     }
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
     .section-galeria .article-galeria .img-galeria {
-        width: 30vw;
-        height: 17vw;
+        width: 32vw;
+        height: 17.5vw;
     }
     .article-galeria .video-youtube {
-        width: 31vw;
-        height: 20vw;
+        width: 34vw;
+        height: 22vw;
+    }
+}
+@media (max-width: 380px) {
+    .section-galeria .article-galeria .img-galeria {
+        width: 32.8vw;
+        height: 18vw;
+    }
+    .article-galeria .video-youtube {
+        width: 34vw;
+        height: 23vw;
     }
 }
 
@@ -661,43 +659,69 @@ footer div p {
     margin: 0;
 }
 
+@media (max-width: 1300px) {
+    footer div ul li {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer div ul li {
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
 @media (max-width: 900px) {
     footer div p {
         font-size: 15px;
     }
     footer {
         height: 60px;
-        width: 101%;
+        width: 100%;
+    }
+    footer div ul li {
+        width: 3.5vw;
+        height: 3.5vw;
     }
 }
 
 @media (max-width: 770px) {
     footer div p {
-        font-size: 10px;
+        font-size: 13px;
     }
     footer {
-        height: 40px;
+        height: 50px;
         width: 101%;
     }
 }
 
 @media (max-width: 570px) {
     footer div p {
-        font-size: 7px;
+        font-size: 11px;
     }
     footer {
-        height: 30px;
+        height: 40px;
         width: 102%;
+    }
+    footer div ul li {
+        width: 4vw;
+        height: 4vw;
     }
 }
 
 @media (max-width: 490px) {
     footer div p {
-        font-size: 5px;
+        font-size: 9px;
     }
     footer {
-        height: 25px;
+        height: 35px;
         width: 103%;
+    }
+    footer div ul li {
+        width: 4.7vw;
+        height: 4.7vw;
     }
 }
 
