@@ -88,28 +88,6 @@ body {
     margin: 10px;
 }*/
 
-@media (max-width: 768px) {
-    .contenedor-index {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 10px;
-    } 
-    .contenedor-index .article-index-parrafo .primer-parrafo-index 
-    , .segundo-parrafo-index
-    , .tercer-parrafo-index {
-        margin: 10px;
-        width: 100vw;
-    }
-    .img-index {
-        width: 45vw;
-        margin: 10px;
-        height: 45vw;
-    }
-}
-
 .contenedor-index .article-index-parrafo .primer-parrafo-index 
 , .segundo-parrafo-index
 , .tercer-parrafo-index {
@@ -618,7 +596,7 @@ footer div p {
     header nav div ul {
         font-size: 13px;
     }
-
+      
     /*the eras tour*/
     .portada-theerastour p {
         font-size: 20px;
