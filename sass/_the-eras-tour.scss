@@ -1,0 +1,41 @@
+/*---------------THE ERAS TOUR---------------*/
+
+/*PORTADA*/
+.portada-theerastour {
+    display: inline-block;
+    text-align: center;
+    .img-portada-theerastour {
+        width: 100%;
+    }
+    p {
+        font-size: 24px;
+        font-weight: lighter;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 1vw 1vw 1vw;
+    }
+}
+
+/*FECHAS*/
+.section-theerastour {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    .div-theerastour ul li {
+        list-style: none;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+.div-titulo-theerastour h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-top: 3px solid #A791BF;
+    border-bottom: 3px solid #A791BF;
+}

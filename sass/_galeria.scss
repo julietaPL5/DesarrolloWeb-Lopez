@@ -1,0 +1,34 @@
+/*---------------GALERIA---------------*/
+
+/*IMG PORTADA*/
+.portada-galeria .img-portada-galeria {
+    width: 100%;
+}
+
+/*YOUTUBE*/
+.section-galeria-youtube {
+    display: flex;
+    justify-content: space-around;
+    margin: 7vw 0;
+    article .video-youtube {
+        width: 30vw;
+        height: 17vw;
+    }
+}
+
+/*IMG GALERIA*/
+.section-galeria {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vw 0;
+    article .img-galeria {
+        width: 27vw;
+        height: 14vw;
+        transition: .1s;
+        &:hover {
+            transform: translate(50px, 20px);
+            transition: 1s;
+
+        }
+    }
+}

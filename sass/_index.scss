@@ -1,0 +1,51 @@
+/*---------------INDEX---------------*/
+
+/*IMG PORTADA*/
+.portada {
+    .img-index-portada{
+        width: 100%;
+    }
+    .parrafo-principal-index {
+        font-size: 28px;
+        font-weight: lighter;
+        color: #ffffff;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+/*IMGAGENES*/ 
+.img-index {
+    width: 16vw;
+    height: 10vw;
+}
+
+/*SECCIONES---PARRAFOS E IMAGENES*/
+.contenedor-index {
+    margin: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .article-index-parrafo .primer-parrafo-index 
+    , .segundo-parrafo-index
+    , .tercer-parrafo-index {
+        font-size: 24px;
+        font-weight: lighter;
+        color: #ffffff;
+        border: solid 3px #A791BF;
+        width: 38vw;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    .div-index-img {
+        .img-index-izquierda {
+            margin-right: 15px;
+        }
+        .img-index-derecha {
+            margin-left: 15px;
+        }
+    }
+}

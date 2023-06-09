@@ -1,0 +1,33 @@
+
+
+//IMPORTS
+//IMPORTS HEADER
+@import "header";
+//IMPORTS INDEX
+@import "index";
+//IMPORTS THE ERAS TOUR
+@import "the-eras-tour";
+//IMPORT DISCOGRAFIA
+@import "discografia";
+//IMPORT GALERIA
+@import "galeria";
+//IMPORT CONTACTO
+@import "contacto";
+//IMPORT FOOTER
+@import "footer";
+//IMPORT MEDIA QUERY
+@import "media-query";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+body {
+    background-color: #000000;
+}
+

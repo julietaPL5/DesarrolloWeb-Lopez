@@ -1,924 +1,828 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
-}
-
+/*---------------HEADER---------------*/
 header {
-    background-color: #A791BF ;
-    height: 65px;
+  background-color: #A791BF;
+  height: 65px;
 }
-
 header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-header nav h1 {
-    font-size: 40px;
-    margin-bottom: 0;
-    margin-left: 5px;
-    margin-top: 10px;
+header nav a h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  margin-top: 10px;
 }
-
 header nav div ul {
-    list-style: none;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
 }
-
 header nav div ul li {
-    margin: 0 20px;
+  margin: 0 20px;
+  transition: 0.3s;
+}
+header nav div ul li:hover {
+  color: #522e78;
+}
+header nav div ul li a {
+  text-decoration-line: none;
+  color: #000000;
 }
 
-a{
-    text-decoration-line: none;
-    color: #000000;
-}
-
-body {
-    background-color: #000000;
-}
-
-
-
-
-
-
-/*----------------------INDEX---------------------*/
-
+/*---------------INDEX---------------*/
 /*IMG PORTADA*/
 .portada .img-index-portada {
-    width: 100%;
+  width: 100%;
 }
-
-/*IMGAGENES*/ 
-.img-index {
-    width: 16vw;
-    height: 10vw;
-}
-
-/*PROPIEDADES DECORATIVAS*/
 .portada .parrafo-principal-index {
-    font-size: 28px;
-    font-weight: lighter;
-    color: #ffffff;
-    text-align: center;
-    margin: 10px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px;
 }
 
-.img-index-izquierda {
-    margin-right: 15px;
-}
-.img-index-derecha {
-    margin-left: 15px;
-}
-/*.contenedor-index {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin: 10px;
-}*/
-
-.contenedor-index .article-index-parrafo .primer-parrafo-index 
-, .segundo-parrafo-index
-, .tercer-parrafo-index {
-    font-size: 24px;
-    font-weight: lighter;
-    color: #ffffff;
-    border: solid 3px #A791BF;
-    width: 38vw;
-    height: 10vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0;
+/*IMGAGENES*/
+.img-index {
+  width: 16vw;
+  height: 10vw;
 }
 
+/*SECCIONES---PARRAFOS E IMAGENES*/
 .contenedor-index {
-    margin: 35px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  margin: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenedor-index .article-index-parrafo .primer-parrafo-index,
+.contenedor-index .segundo-parrafo-index,
+.contenedor-index .tercer-parrafo-index {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #ffffff;
+  border: solid 3px #A791BF;
+  width: 38vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+.contenedor-index .div-index-img .img-index-izquierda {
+  margin-right: 15px;
+}
+.contenedor-index .div-index-img .img-index-derecha {
+  margin-left: 15px;
 }
 
-
-
-
-
-
-
-
-
-/*--------------------THE ERAS TOUR--------------------*/
-
-/*IMG PORTADA*/
-.portada-theerastour .img-portada-theerastour {
-    width: 100%;
-}
-
-.portada-theerastour p {
-    font-size: 24px;
-    font-weight: lighter;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 1vw 1vw 1vw;
-}
-
+/*---------------THE ERAS TOUR---------------*/
+/*PORTADA*/
 .portada-theerastour {
-    display: inline-block;
-    text-align: center;
+  display: inline-block;
+  text-align: center;
+}
+.portada-theerastour .img-portada-theerastour {
+  width: 100%;
+}
+.portada-theerastour p {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 1vw 1vw 1vw;
 }
 
 /*FECHAS*/
 .section-theerastour {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
-
 .section-theerastour .div-theerastour ul li {
-    list-style: none;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: lighter;
+  list-style: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .div-titulo-theerastour h3 {
-    color: #ffffff;
-    font-size: 24px;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    border-top: 3px solid #A791BF;
-    border-bottom: 3px solid #A791BF;
+  color: #ffffff;
+  font-size: 24px;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  border-top: 3px solid #A791BF;
+  border-bottom: 3px solid #A791BF;
 }
 
-
-
-
-
-
-
-/*-------------------DISCOGRAFIA------------------*/
-
-/*IMG DISCOGRAFIA COVER*/ 
+/*---------------DISCOGRAFIA---------------*/
+/*TITULO, PORTADA ALBUM Y CANCIONES*/
 .img-discografia {
-    width: 10vw;
-    height: 10vw;
-    /*-webkit-filter: blur(0);
-	filter: blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;*/
+  width: 10vw;
+  height: 10vw;
+  transition: 0.3s;
 }
-
-/*.img-discografia:hover {
-	-webkit-filter: blur(2px);
-	filter: blur(2px);
-}*/
-
-/*TITULO Y CANCIONES*/
-.canciones-discografia {
-    list-style: none;
-    font-weight: lighter;
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
+.img-discografia:hover {
+  transform: scale(2);
+  transition: 1s;
 }
 
 .album-titulo-discografia {
-    font-size: 30px;
-    font-style: italic;
-    margin-bottom: 0;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
-
-/*DEBUT ALBUM*/
-.section-discografia-debut {
-    background-color: #A5E4E8;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.canciones-discografia {
+  list-style: none;
+  font-weight: lighter;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
-/*SPEAK NOW*/
-.section-discografia-speaknow {
-    background-color: #B7A4BF;
-    display: flex;
-    align-items: center;
-    text-align: center;
+/*TODAS LAS SECCIONES DE LOS ALBUMES*/
+main .section-discografia-debut {
+  background-image: radial-gradient(ellipse, #A5E4E8, #82bd97);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-speaknow {
+  background-image: radial-gradient(ellipse, #B7A4BF, #7f6689);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-1989 {
+  background-image: radial-gradient(ellipse, #D6ECF1, #8dc5d1);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-reputation {
+  background-image: radial-gradient(ellipse, #587060, #293c2f);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-lover {
+  background-image: radial-gradient(ellipse, #FFCDD8, #b48f97);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-folklore {
+  background-image: radial-gradient(ellipse, #DBDBDB, #979797);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-evermore {
+  background-image: radial-gradient(ellipse, #A57156, #735241);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-fearless {
+  background-image: radial-gradient(ellipse, #D3BB99, #a18660);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-red {
+  background-image: radial-gradient(ellipse, #B44949, #662b2b);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+main .section-discografia-midnights {
+  background-image: radial-gradient(ellipse, #434662, #272a45);
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-/*1989*/
-.section-discografia-1989 {
-    background-color: #D6ECF1;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*REPUTATION*/
-.section-discografia-reputation {
-    background-color: #587060;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*LOVER*/
-.section-discografia-lover {
-    background-color: #FFCDD8;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*FOLKLORE*/
-.section-discografia-folklore {
-    background-color: #DBDBDB;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*EVERMORE*/
-.section-discografia-evermore {
-    background-color: #A57156;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*FEARLESS*/
-.section-discografia-fearless {
-    background-color: #D3BB99;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*RED*/
-.section-discografia-red {
-    background-color: #B44949;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/*MIDNIGHTS*/
-.section-discografia-midnights {
-    background-color: #434662;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-
-
-
-
-
-
-/*----------------GALERIA---------------*/
-
+/*---------------GALERIA---------------*/
 /*IMG PORTADA*/
 .portada-galeria .img-portada-galeria {
-    width: 100%;
+  width: 100%;
 }
 
-.article-galeria .video-youtube {
-    width: 30vw;
-    height: 17vw;
+/*YOUTUBE*/
+.section-galeria-youtube {
+  display: flex;
+  justify-content: space-around;
+  margin: 7vw 0;
+}
+.section-galeria-youtube article .video-youtube {
+  width: 30vw;
+  height: 17vw;
 }
 
 /*IMG GALERIA*/
-.section-galeria .article-galeria .img-galeria {
-    width: 27vw;
-    height: 14vw;
-}
-
-.section-galeria-youtube {
-    display: flex;
-    justify-content: space-around;
-    margin: 7vw 0;
-}
-
 .section-galeria {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5vw 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5vw 0;
+}
+.section-galeria article .img-galeria {
+  width: 27vw;
+  height: 14vw;
+  transition: 0.1s;
+}
+.section-galeria article .img-galeria:hover {
+  transform: translate(50px, 20px);
+  transition: 1s;
 }
 
-
-
-
-
-
-
-/*----------------CONTACTO-----------------*/
+/*---------------CONTACTO---------------*/
 .main-contacto {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.main-contacto .section-contacto-formulario {
+  background-image: radial-gradient(ellipse, #756685, #3e2e4f);
+  color: #ffffff;
+  width: 80vw;
+  height: 33vw;
+  margin: 95px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-contacto .section-contacto-formulario h2 {
+  font-size: 25px;
+  text-align: center;
+}
+.main-contacto .section-contacto-formulario .formulario {
+  font-weight: lighter;
+}
+.main-contacto .section-contacto-formulario .formulario div label {
+  font-size: 15px;
 }
 
-.section-contacto-formulario {
-    background-color: #756685;
-    color: #ffffff;
+/*---------------PIE DE PAGINA---------------*/
+footer {
+  background-color: #A791BF;
+  color: #000000;
+  font-size: 20px;
+  font-weight: lighter;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div p {
+  margin: 0;
+}
+footer div ul {
+  margin: 0;
+  padding: 0;
+}
+footer div ul li {
+  width: 2vw;
+  height: 2vw;
+  display: inline-block;
+}
+
+/*---------------MEDIA QUERY---------------*/
+@media (max-width: 1900px) {
+  /*index*/
+  .portada .parrafo-principal-index {
+    font-size: 24px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    font-size: 20px;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    font-size: 20px;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1500px) {
+  /*index*/
+  .portada .parrafo-principal-index {
+    font-size: 22px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    font-size: 18px;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    font-size: 18px;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1440px) {
+  /*header*/
+  header nav h1 {
+    font-size: 35px;
+  }
+  header nav div ul {
+    font-size: 18px;
+  }
+  /*discografia*/
+  .canciones-discografia {
+    font-size: 20px;
+  }
+  .album-titulo-discografia {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1340px) {
+  /*index*/
+  .portada .parrafo-principal-index {
+    font-size: 20px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    font-size: 16px;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    font-size: 16px;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1300px) {
+  /*footer*/
+  footer div ul li {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
+@media (max-width: 1200px) {
+  /*index*/
+  .portada .parrafo-principal-index {
+    font-size: 19px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    width: 42vw;
+    height: 14vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    width: 42vw;
+    height: 14vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    width: 42vw;
+    height: 14vw;
+  }
+  .img-index {
+    width: 20vw;
+    height: 14vw;
+  }
+  /*contacto*/
+  .main-contacto .section-contacto-formulario {
+    margin: 70px 0;
+    width: 85vw;
+    height: 40vw;
+  }
+  .main-contacto .section-contacto-formulario .formulario div {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1024px) {
+  /*index*/
+  .primer-seccion, .tercer-seccion {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .segunda-seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    width: 70vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    width: 70vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    width: 70vw;
+  }
+  .img-index-izquierda {
+    margin-right: 20px;
+  }
+  .img-index-derecha {
+    margin-left: 20px;
+  }
+  /*the eras tour*/
+  .portada-theerastour p {
+    font-size: 22px;
+  }
+  .div-titulo-theerastour h3 {
+    font-size: 22px;
+  }
+  .section-theerastour .div-theerastour ul li {
+    font-size: 18px;
+  }
+  /*galeria*/
+  .section-galeria .article-galeria .img-galeria {
+    width: 34vw;
+    height: 18vw;
+  }
+  .article-galeria .video-youtube {
+    width: 36vw;
+    height: 22vw;
+  }
+  /*footer*/
+  footer div ul li {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+@media (max-width: 900px) {
+  /*header*/
+  header nav h1 {
+    font-size: 30px;
+  }
+  header nav div ul {
+    font-size: 14px;
+  }
+  /*discografia*/
+  .img-discografia {
+    height: 12vw;
+    width: 12vw;
+  }
+  /*footer*/
+  footer div p {
+    font-size: 18px;
+  }
+  footer {
+    height: 60px;
+  }
+  footer div ul li {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+}
+@media (max-width: 808px) {
+  /*index*/
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    height: 17vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    height: 17vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    height: 17vw;
+  }
+  .img-index {
+    width: 25vw;
+    height: 17vw;
+  }
+  /*discografia*/
+  .section-discografia-debut, .section-discografia-speaknow, .section-discografia-1989, .section-discografia-lover, .section-discografia-reputation, .section-discografia-folklore, .section-discografia-evermore, .section-discografia-fearless, .section-discografia-red, .section-discografia-midnights {
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo-album {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 770px) {
+  /*footer*/
+  footer {
+    height: 50px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /*header*/
+  header nav h1 {
+    font-size: 25px;
+  }
+  header nav div ul {
+    font-size: 13px;
+  }
+  /*the eras tour*/
+  .portada-theerastour p {
+    font-size: 20px;
+  }
+  .div-titulo-theerastour h3 {
+    font-size: 20px;
+  }
+  .section-theerastour .div-theerastour ul li {
+    font-size: 16px;
+  }
+  /*discografia*/
+  .img-discografia {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+@media (max-width: 700px) {
+  /*header*/
+  header {
+    height: 60px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*index*/
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
     width: 80vw;
-    height: 33vw;
-    margin: 95px 0px;
+    height: 20vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    width: 80vw;
+    height: 20vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    width: 80vw;
+    height: 20vw;
+  }
+  .img-index {
+    width: 30vw;
+    height: 20vw;
+  }
+  /*galeria*/
+  .section-galeria .article-galeria .img-galeria {
+    width: 34vw;
+    height: 18vw;
+  }
+  .article-galeria .video-youtube {
+    width: 36vw;
+    height: 23vw;
+  }
+  /*contacto*/
+  .main-contacto .section-contacto-formulario {
+    height: 55vw;
+  }
+}
+@media (max-width: 625px) {
+  /*index*/
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    width: 85vw;
+    height: 25vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    width: 85vw;
+    height: 25vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    width: 85vw;
+    height: 25vw;
+  }
+  .img-index {
+    width: 37vw;
+    height: 25vw;
+  }
+  /*the eras tour*/
+  .portada-theerastour p {
+    font-size: 16px;
+  }
+  .div-titulo-theerastour h3 {
+    font-size: 16px;
+  }
+  .section-theerastour .div-theerastour ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 570px) {
+  /*discografia*/
+  .img-discografia {
+    width: 17vw;
+    height: 17vw;
+  }
+  /*contacto*/
+  .main-contacto .section-contacto-formulario {
+    height: 70vw;
+  }
+  /*footer*/
+  footer div p {
+    font-size: 15px;
+  }
+  footer {
+    height: 40px;
+  }
+  footer div ul li {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+@media (max-width: 540px) {
+  /*the eras tour*/
+  .portada-theerastour p {
+    font-size: 16px;
+  }
+  .div-titulo-theerastour h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .section-theerastour .div-theerastour ul li {
+    font-size: 14px;
+  }
+  .section-theerastour {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
-
-.section-contacto-formulario .formulario {
-    font-weight: lighter;
-}
-
-form div label {
-    font-size: 15px;
-}
-
-.section-contacto-formulario h2 {
-    font-size: 25px;
-}
-
-
-
-
-/*PIE DE PAGINA*/
-footer {
-    background-color: #A791BF ;
-    color: #000000;
-    font-size: 20px;
-    font-weight: lighter;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-footer div ul {
-    margin: 0;
-    padding: 0;
-}
-
-footer div ul li {
-    width: 2vw;
-    height: 2vw;
-    display: inline-block;
-}
-
-footer div p {
-    margin: 0;
-}
-
-
-
-
-
-/*----------------MEDIA QUERY-----------------*/
-
-@media (max-width: 1900px) {
-    /*index*/
-    .portada .parrafo-principal-index {
-        font-size: 24px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1500px) {
-    /*index*/
-    .portada .parrafo-principal-index {
-        font-size: 22px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 1440px) {
-    /*header*/
-    header nav h1 {
-        font-size: 35px;
-    }
-    header nav div ul {
-        font-size: 18px;
-    }
-
-    /*discografia*/
-    .canciones-discografia {
-        font-size: 20px;
-    }
-    .album-titulo-discografia {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 1340px) {
-    /*index*/
-    .portada .parrafo-principal-index {
-        font-size: 20px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 1300px) {
-    /*footer*/
-    footer div ul li {
-        width: 2.5vw;
-        height: 2.5vw;
-    }
-}
-
-@media (max-width: 1200px) {
-    /*index*/
-    .portada .parrafo-principal-index {
-        font-size: 19px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        font-size: 16px;
-        width: 42vw;
-        height: 14vw;
-    }
-    .img-index {
-        width: 20vw;
-        height: 14vw;
-    }
-}
-
-@media (max-width: 1024px) {
-    /*index*/
-    .primer-seccion , .tercer-seccion {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    .segunda-seccion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        width: 70vw;
-        height: 14vw;
-    }
-    .img-index-izquierda {
-        margin-right: 20px;
-    }
-    .img-index-derecha {
-        margin-left: 20px;
-    }
-    
-    /*the eras tour*/
-    .portada-theerastour p {
-        font-size: 22px;
-    }
-    .div-titulo-theerastour h3 {
-        font-size: 22px;
-    }
-    .section-theerastour .div-theerastour ul li {
-        font-size: 18px;
-    }
-
-    /*galeria*/
-    .section-galeria .article-galeria .img-galeria {
-        width: 34vw;
-        height: 18vw;
-    }
-    .article-galeria .video-youtube {
-        width: 36vw;
-        height: 22vw;
-    }
-
-    /*footer*/
-    footer div ul li {
-        width: 3vw;
-        height: 3vw;
-    }
-}
-
-@media (max-width: 900px) {
-    /*header*/
-    header nav h1 {
-        font-size: 30px;
-    }
-    header nav div ul {
-        font-size: 14px;
-    }
-
-    /*discografia*/
-    .canciones-discografia {
-        font-size: 15px;
-    }
-    .album-titulo-discografia {
-        font-size: 20px;
-    }
-
-    /*footer*/
-    footer div p {
-        font-size: 15px;
-    }
-    footer {
-        height: 60px;
-    }
-    footer div ul li {
-        width: 3.5vw;
-        height: 3.5vw;
-    }
-}
-
-@media (max-width: 808px) {
-    /*index*/
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        width: 70vw;
-        height: 17vw;
-    }
-    .img-index {
-        width: 25vw;
-        height: 17vw;
-    }
-}
-
-@media (max-width: 770px) {
-    /*footer*/
-    footer div p {
-        font-size: 13px;
-    }
-    footer {
-        height: 50px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    /*header*/
-    header nav h1 {
-        font-size: 25px;
-    }
-    header nav div ul {
-        font-size: 13px;
-    }
-      
-    /*the eras tour*/
-    .portada-theerastour p {
-        font-size: 20px;
-    }
-    .div-titulo-theerastour h3 {
-        font-size: 20px;
-    }
-    .section-theerastour .div-theerastour ul li {
-        font-size: 16px;
-    }
-
-    /*discografia*/
-    .canciones-discografia {
-        font-size: 11px;
-        width: 220px;
-    }
-    .album-titulo-discografia {
-        font-size: 17px;
-    }
-    .img-discografia {
-        width: 12vw;
-        height: 12vw;
-    }
-    .section-discografia-debut , .section-discografia-speaknow , .section-discografia-1989 , .section-discografia-lover , .section-discografia-reputation , .section-discografia-folklore , .section-discografia-evermore , .section-discografia-fearless , .section-discografia-midnights
-    {
-        height: 140px;
-    }
-    .section-discografia-red {
-        height: 165px;
-    }
-}
-
-@media (max-width: 700px) {
-    /*header*/
-    header {
-        height: 60px;
-    }
-    header nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    /*index*/
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        width: 80vw;
-        height: 20vw;
-    }
-    .img-index {
-        width: 30vw;
-        height: 20vw;
-    }
-
-    /*galeria*/
-    .section-galeria .article-galeria .img-galeria {
-        width: 34vw;
-        height: 18vw;
-    }
-    .article-galeria .video-youtube {
-        width: 36vw;
-        height: 23vw;
-    }
-}
-
-@media (max-width: 625px) {
-    /*index*/
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        width: 85vw;
-        height: 25vw;
-    }
-    .img-index {
-        width: 37vw;
-        height: 25vw;
-    }
-
-    /*the eras tour*/
-    .portada-theerastour p {
-        font-size: 16px;
-    }
-    .div-titulo-theerastour h3 {
-        font-size: 16px;
-    }
-    .section-theerastour .div-theerastour ul li {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 570px) {
-    /*discografia*/
-    .canciones-discografia {
-        font-size: 9px;
-        width: 190px;
-    }
-    .album-titulo-discografia {
-        font-size: 12px;
-    }
-    .img-discografia {
-        width: 14vw;
-        height: 14vw;
-    }
-    .section-discografia-debut , .section-discografia-speaknow , .section-discografia-1989 , .section-discografia-lover , .section-discografia-reputation , .section-discografia-folklore , .section-discografia-evermore , .section-discografia-fearless , .section-discografia-midnights
-    {
-        height: 115px;
-    }
-    .section-discografia-red {
-        height: 140px;
-    }
-    
-    /*footer*/
-    footer div p {
-        font-size: 11px;
-    }
-    footer {
-        height: 40px;
-    }
-    footer div ul li {
-        width: 4vw;
-        height: 4vw;
-    }
-}
-
-@media (max-width: 540px) {
-    /*the eras tour*/
-    .portada-theerastour p {
-        font-size: 16px;
-    }
-    .div-titulo-theerastour h3 {
-        font-size: 16px;
-        margin-bottom: 30px;
-    }
-    .section-theerastour .div-theerastour ul li {
-        font-size: 14px;
-    }
-    .section-theerastour {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-}
-
 @media (max-width: 530px) {
-    /*header*/
-    header nav h1 {
-        font-size: 22px;
-    }
-    header nav div ul {
-        font-size: 10px;
-    }
-
-    /*index*/
-    .portada .parrafo-principal-index {
-        font-size: 17px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        font-size: 14px;
-        width: 85vw;
-        height: 30vw;
-    }
+  /*header*/
+  header nav h1 {
+    font-size: 22px;
+  }
+  header nav div ul {
+    font-size: 10px;
+  }
+  /*index*/
+  .portada .parrafo-principal-index {
+    font-size: 17px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    font-size: 14px;
+    height: 30vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    font-size: 14px;
+    height: 30vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    font-size: 14px;
+    height: 30vw;
+  }
 }
-
 @media (max-width: 500px) {
-    /*discografia*/
-    .canciones-discografia {
-        font-size: 8px;
-        width: 140px;
-    }
-    .album-titulo-discografia {
-        font-size: 12px;
-    }
-    .section-discografia-red {
-        height: 135px;
-    }
-
-    /*galeria*/
-    .section-galeria .article-galeria .img-galeria {
-        width: 36vw;
-        height: 19vw;
-    }
-    .article-galeria .video-youtube {
-        width: 38vw;
-        height: 26vw;
-    }
+  /*discografia*/
+  .canciones-discografia {
+    font-size: 17px;
+  }
+  .album-titulo-discografia {
+    font-size: 22px;
+  }
+  .img-discografia {
+    height: 22vw;
+    width: 22vw;
+  }
+  /*galeria*/
+  .section-galeria .article-galeria .img-galeria {
+    width: 36vw;
+    height: 19vw;
+  }
+  .article-galeria .video-youtube {
+    width: 38vw;
+    height: 26vw;
+  }
 }
-
 @media (max-width: 490px) {
-    /*footer*/
-    footer div p {
-        font-size: 9px;
-    }
-    footer {
-        height: 35px;
-    }
-    footer div ul li {
-        width: 4.7vw;
-        height: 4.7vw;
-    }
+  /*footer*/
+  footer div p {
+    font-size: 14px;
+  }
 }
-
 @media (max-width: 470px) {
-    /*header*/
-    header {
-        height: 55px;
-    }
-    header nav h1 {
-        font-size: 20px;
-    }
-    header nav div ul {
-        font-size: 8px;
-    }
-    .nav-the-eras-tour {
-        text-align: center;
-        margin: 0;
-    }
+  /*header*/
+  header {
+    height: 55px;
+  }
+  header nav h1 {
+    font-size: 20px;
+  }
+  header nav div ul {
+    font-size: 8px;
+  }
+  .nav-the-eras-tour {
+    text-align: center;
+    margin: 0;
+  }
+  /*contacto*/
+  .main-contacto .section-contacto-formulario {
+    height: 80vw;
+  }
+  .main-contacto .section-contacto-formulario h2 {
+    font-size: 20px;
+  }
 }
-
 @media (max-width: 425px) {
-    /*index*/
-    .portada .parrafo-principal-index {
-        font-size: 16px;
-    }
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index 
-    , .tercer-parrafo-index {
-        width: 85vw;
-        height: 38vw;
-    }
-
-    /*the eras tour*/
-    .portada-theerastour p {
-        font-size: 14px;
-    }
-    .div-titulo-theerastour h3 {
-        font-size: 14px;
-    }
-    .section-theerastour .div-theerastour ul li {
-        font-size: 12px;
-    }
+  /*index*/
+  .portada .parrafo-principal-index {
+    font-size: 16px;
+  }
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    width: 85vw;
+    height: 38vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    width: 85vw;
+    height: 38vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    width: 85vw;
+    height: 38vw;
+  }
+  /*the eras tour*/
+  .portada-theerastour p {
+    font-size: 14px;
+  }
+  .div-titulo-theerastour h3 {
+    font-size: 14px;
+  }
+  .section-theerastour .div-theerastour ul li {
+    font-size: 12px;
+  }
 }
-
 @media (max-width: 400px) {
-    /*dicografia*/
-    .canciones-discografia {
-        font-size: 7px;
-        width: 100px;
-    }
-    .album-titulo-discografia {
-        font-size: 9px;
-    }
-    .img-discografia {
-        width: 15vw;
-        height: 15vw;
-    }
-    .section-discografia-debut , .section-discografia-speaknow , .section-discografia-1989 , .section-discografia-lover , .section-discografia-reputation , .section-discografia-folklore , .section-discografia-evermore , .section-discografia-fearless , .section-discografia-midnights
-    {
-        height: 105px;
-    }
-    .section-discografia-red {
-        height: 120px;
-    }
+  /*dicografia*/
+  .img-discografia {
+    width: 30vw;
+    height: 30vw;
+  }
+  /*contacto*/
+  .main-contacto .section-contacto-formulario {
+    height: 95vw;
+  }
 }
-
 @media (max-width: 380px) {
-    /*index*/
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index {
-        height: 43vw;
-    }
-    .tercer-parrafo-index {
-        height: 47vw;
-    }
-
-    /*galeria*/
-    .section-galeria .article-galeria .img-galeria {
-        width: 38vw;
-        height: 21vw;
-    }
-    .article-galeria .video-youtube {
-        width: 50vw;
-        height: 30vw;
-    }
-    .section-galeria-youtube{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  /*index*/
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    height: 43vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    height: 43vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    height: 47vw;
+  }
+  /*galeria*/
+  .section-galeria .article-galeria .img-galeria {
+    width: 38vw;
+    height: 21vw;
+  }
+  .section-galeria-youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-galeria-youtube .article-galeria .video-youtube {
+    width: 50vw;
+    height: 30vw;
+  }
+  /*footer*/
+  footer div p {
+    font-size: 12px;
+  }
 }
-
 @media (max-width: 345px) {
-    /*index*/
-    .contenedor-index .article-index-parrafo 
-    .primer-parrafo-index 
-    , .segundo-parrafo-index {
-        height: 46vw;
-    }
-    .tercer-parrafo-index {
-        height: 54vw;
-    }
-    .primer-seccion {
-        margin-top: 25px;
-    }
-
-    /*header*/
-    header {
-        height: 55px;
-    }
-    header nav h1 {
-        font-size: 19px;
-    }
-    header nav div ul {
-        font-size: 7px;
-    }
+  /*index*/
+  .contenedor-index .article-index-parrafo .primer-parrafo-index {
+    height: 46vw;
+  }
+  .contenedor-index .article-index-parrafo .segundo-parrafo-index {
+    height: 46vw;
+  }
+  .contenedor-index .article-index-parrafo .tercer-parrafo-index {
+    height: 54vw;
+  }
+  .primer-seccion {
+    margin-top: 25px;
+  }
+  /*header*/
+  header {
+    height: 55px;
+  }
+  header nav h1 {
+    font-size: 19px;
+  }
+  header nav div ul {
+    font-size: 7px;
+  }
 }
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
