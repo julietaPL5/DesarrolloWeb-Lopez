@@ -631,7 +631,7 @@ footer div ul li {
     font-size: 15px;
   }
   footer {
-    height: 40px;
+    height: 60px;
   }
   footer div ul li {
     width: 5vw;
@@ -717,12 +717,6 @@ footer div ul li {
     height: 40vw;
   }
 }
-@media (max-width: 490px) {
-  /*footer*/
-  footer div p {
-    font-size: 14px;
-  }
-}
 @media (max-width: 470px) {
   /*header*/
   header {
@@ -744,6 +738,14 @@ footer div ul li {
   }
   .main-contacto .section-contacto-formulario h2 {
     font-size: 20px;
+  }
+  /*footer*/
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5px;
+    height: 70px;
   }
 }
 @media (max-width: 425px) {
@@ -777,6 +779,11 @@ footer div ul li {
     width: 85vw;
     height: 52vw;
   }
+  /*footer*/
+  footer div ul li {
+    width: 6vw;
+    height: 6vw;
+  }
 }
 @media (max-width: 400px) {
   /*dicografia*/
@@ -802,7 +809,11 @@ footer div ul li {
   }
   /*footer*/
   footer div p {
-    font-size: 12px;
+    font-size: 14px;
+  }
+  footer div ul li {
+    width: 7vw;
+    height: 7vw;
   }
 }
 @media (max-width: 345px) {
