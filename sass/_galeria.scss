@@ -24,11 +24,5 @@
     article .img-galeria {
         width: 27vw;
         height: 14vw;
-        transition: .1s;
-        &:hover {
-            transform: translate(50px, 20px);
-            transition: 1s;
-
-        }
     }
 }

@@ -12,7 +12,7 @@
         font-weight: lighter;
         color: #ffffff;
         text-align: center;
-        margin: 0 1vw 1vw 1vw;
+        margin: 1vw;
     }
 }
 
@@ -21,11 +21,14 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    .div-theerastour ul li {
-        list-style: none;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: lighter;
+    .div-theerastour ul {
+        padding: 0;
+        li {
+            list-style: none;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: lighter;
+        }
     }
 }
 

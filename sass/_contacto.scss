@@ -18,8 +18,13 @@
         }
         .formulario {
             font-weight: lighter;
-            div label {
+            div {
+                label {
                 font-size: 15px;
+                } 
+                .boton-enviar {
+                    margin-top: 8px;
+                }
             }
         }
     }
