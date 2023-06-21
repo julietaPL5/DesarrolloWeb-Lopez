@@ -696,13 +696,25 @@ footer div ul li {
     width: 22vw;
   }
   /*galeria*/
+  .section-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
   .section-galeria .article-galeria .img-galeria {
-    width: 36vw;
-    height: 19vw;
+    width: 70vw;
+    height: 35vw;
+    margin: 10px 0;
+  }
+  .section-galeria-youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .section-galeria-youtube article .video-youtube {
-    width: 38vw;
-    height: 26vw;
+    width: 75vw;
+    height: 40vw;
   }
 }
 @media (max-width: 490px) {
@@ -728,7 +740,7 @@ footer div ul li {
   }
   /*contacto*/
   .main-contacto .section-contacto-formulario {
-    height: 80vw;
+    height: 100vw;
   }
   .main-contacto .section-contacto-formulario h2 {
     font-size: 20px;
@@ -751,15 +763,19 @@ footer div ul li {
     width: 85vw;
     height: 38vw;
   }
-  /*the eras tour*/
-  .portada-theerastour p {
-    font-size: 14px;
+  .contenedor-index .div-index-img {
+    flex-direction: column;
   }
-  .div-titulo-theerastour h3 {
-    font-size: 14px;
+  .contenedor-index .div-index-img .img-index-izquierda {
+    margin-right: 0;
   }
-  .section-theerastour .div-theerastour ul li {
-    font-size: 12px;
+  .contenedor-index .div-index-img .img-index-derecha {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .contenedor-index .div-index-img .img-index {
+    width: 85vw;
+    height: 52vw;
   }
 }
 @media (max-width: 400px) {
@@ -770,7 +786,7 @@ footer div ul li {
   }
   /*contacto*/
   .main-contacto .section-contacto-formulario {
-    height: 95vw;
+    height: 110vw;
   }
 }
 @media (max-width: 380px) {
@@ -783,20 +799,6 @@ footer div ul li {
   }
   .contenedor-index .article-index-parrafo .tercer-parrafo-index {
     height: 47vw;
-  }
-  /*galeria*/
-  .section-galeria .article-galeria .img-galeria {
-    width: 38vw;
-    height: 21vw;
-  }
-  .section-galeria-youtube {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-galeria-youtube article .video-youtube {
-    width: 50vw;
-    height: 30vw;
   }
   /*footer*/
   footer div p {
