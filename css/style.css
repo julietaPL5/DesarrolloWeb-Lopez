@@ -159,7 +159,7 @@ header nav div ul li:hover {
   list-style: none;
   font-weight: 400;
   font-size: 24px;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -716,6 +716,7 @@ footer .footer_contenedor .contenedor-nav ul li:hover {
   }
   header nav div ul li {
     width: 100%;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -729,8 +730,8 @@ footer .footer_contenedor .contenedor-nav ul li:hover {
     font-size: 22px;
   }
   .img-discografia {
-    height: 22vw;
-    width: 22vw;
+    height: 25vw;
+    width: 25vw;
   }
   /*galeria*/
   .section-galeria {
