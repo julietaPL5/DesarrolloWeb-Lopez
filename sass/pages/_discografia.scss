@@ -20,70 +20,49 @@
     list-style: none;
     font-weight: 400;
     font-size: 24px;
-    margin: 0;
-    padding: 0;
+    @include margin0-padding0;
 }
 
 /*TODAS LAS SECCIONES DE LOS ALBUMES*/
 main {
     .section-discografia-debut {
         background-image: radial-gradient(ellipse, #A5E4E8, #82bd97);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-speaknow {
         background-image: radial-gradient(ellipse, #B7A4BF, #7f6689);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-1989 {
         background-image: radial-gradient(ellipse, #D6ECF1, #8dc5d1);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-reputation {
         background-image: radial-gradient(ellipse, #587060, #293c2f);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-lover {
         background-image: radial-gradient(ellipse, #FFCDD8, #b48f97);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-folklore {
         background-image: radial-gradient(ellipse, #DBDBDB, #979797);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-evermore {
         background-image: radial-gradient(ellipse, #A57156, #735241);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-fearless {
         background-image: radial-gradient(ellipse, #D3BB99, #a18660);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-red {
         background-image: radial-gradient(ellipse, #B44949, #662b2b);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
     .section-discografia-midnights {
         background-image: radial-gradient(ellipse, #434662, #272a45);
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include flex-center-center;
     }
 }

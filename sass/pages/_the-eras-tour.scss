@@ -10,7 +10,7 @@
     p {
         font-size: 24px;
         font-weight: lighter;
-        color: #ffffff;
+        color: $texto-blanco;
         text-align: center;
         margin: 1vw;
     }
@@ -25,20 +25,20 @@
         padding: 0;
         li {
             list-style: none;
-            color: #ffffff;
+            color: $texto-blanco;
             font-size: 20px;
             font-weight: lighter;
         }
     }
 }
 
-.div-titulo-theerastour h3 {
-    color: #ffffff;
+.div-titulo-theerastour h2 {
+    color: $texto-blanco;
     font-size: 24px;
     font-style: italic;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    border-top: 3px solid #A791BF;
-    border-bottom: 3px solid #A791BF;
+    border-top: $bordes;
+    border-bottom: $bordes;
 }

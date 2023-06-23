@@ -74,9 +74,17 @@
 
 @media (max-width: 1300px) {
     /*footer*/
-    footer div ul li {
-        width: 2.5vw;
-        height: 2.5vw;
+    footer {
+        .footer_contenedor {
+            .contenedor-iconos {
+                ul {
+                    li {
+                        width: 3vw;
+                        height: 3vw;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -153,7 +161,7 @@
     .portada-theerastour p {
         font-size: 22px;
     }
-    .div-titulo-theerastour h3 {
+    .div-titulo-theerastour h2 {
         font-size: 22px;
     }
     .section-theerastour .div-theerastour ul li {
@@ -171,21 +179,34 @@
     }
 
     /*footer*/
-    footer div ul li {
-        width: 3vw;
-        height: 3vw;
+    footer {
+        .footer_contenedor {
+            .contenedor-iconos {
+                ul {
+                    li {
+                        width: 4vw;
+                        height: 4vw;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 900px) {
     /*header*/
-    header nav h1 {
-        font-size: 30px;
+    header {
+        height: fit-content;
+        nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div ul {
+            margin-top: 8px;
+        }
+        }
     }
-    header nav div ul {
-        font-size: 14px;
-    }
-
+    
     /*discografia*/
     .img-discografia {
         height: 12vw;
@@ -193,15 +214,20 @@
     }
 
     /*footer*/
-    footer div p {
-        font-size: 18px;
-    }
     footer {
-        height: 60px;
-    }
-    footer div ul li {
-        width: 3.5vw;
-        height: 3.5vw;
+       .footer-contenedor-p p {
+            font-size: 18px;
+        }
+        .footer_contenedor {
+            .contenedor-iconos {
+                ul {
+                    li {
+                        width: 5vw;
+                        height: 5vw;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -231,30 +257,35 @@
     .titulo-album {
         margin: 15px 0;
     }
-}
 
-@media (max-width: 770px) {
     /*footer*/
-    footer {
-        height: 50px;
-        width: 100%;
+    footer{
+        .footer_contenedor {
+            .contenedor-nav {
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 768px) {
     /*header*/
     header nav h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     header nav div ul {
-        font-size: 13px;
+        font-size: 16px;
     }
       
     /*the eras tour*/
     .portada-theerastour p {
         font-size: 20px;
     }
-    .div-titulo-theerastour h3 {
+    .div-titulo-theerastour h2 {
         font-size: 20px;
     }
     .section-theerastour .div-theerastour ul li {
@@ -269,16 +300,6 @@
 }
 
 @media (max-width: 700px) {
-    /*header*/
-    header {
-        height: 60px;
-    }
-    header nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     /*index*/
     .contenedor-index .article-index-parrafo {
         .primer-parrafo-index {
@@ -340,7 +361,7 @@
     .portada-theerastour p {
         font-size: 16px;
     }
-    .div-titulo-theerastour h3 {
+    .div-titulo-theerastour h2 {
         font-size: 16px;
     }
     .section-theerastour .div-theerastour ul li {
@@ -349,6 +370,14 @@
 }
 
 @media (max-width: 570px) {
+    /*header*/
+    header nav h1 {
+        font-size: 25px;
+    }
+    header nav div ul {
+        font-size: 13px;
+    }
+
     /*discografia*/
     .img-discografia {
         width: 17vw;
@@ -357,20 +386,31 @@
 
     /*contacto*/
     .main-contacto .section-contacto-formulario {
-        height: 70vw;
+        height: 80vw;
     }
 
     /*footer*/
-    footer div p {
-        font-size: 15px;
-    }
     footer {
-        height: 60px;
-    }
-    footer div ul li {
-        width: 5vw;
-        height: 5vw;
-    }
+        padding: 5px;
+        .footer-contenedor-p {
+            p {
+                font-size: 15px;
+            }
+        } 
+        .footer_contenedor {
+            .contenedor-iconos {
+                ul {
+                    li {
+                        width: 6vw;
+                        height: 6vw;
+                    }
+                }
+            }
+            .contenedor-nav {
+                font-size: 18px;
+            }
+        }
+    } 
 }
 
 @media (max-width: 540px) {
@@ -378,7 +418,7 @@
     .portada-theerastour p {
         font-size: 16px;
     }
-    .div-titulo-theerastour h3 {
+    .div-titulo-theerastour h2 {
         font-size: 16px;
         margin-bottom: 30px;
     }
@@ -395,14 +435,6 @@
 }
 
 @media (max-width: 530px) {
-    /*header*/
-    header nav h1 {
-        font-size: 22px;
-    }
-    header nav div ul {
-        font-size: 10px;
-    }
-
     /*index*/
     .portada .parrafo-principal-index {
         font-size: 17px;
@@ -424,6 +456,22 @@
 }
 
 @media (max-width: 500px) {
+    /*header*/
+    header nav div {
+        width: 100%;
+        ul {
+            flex-direction: column;
+            align-items: center;
+            li {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-top: 2px solid #7e6d90;
+            }
+        }
+    }
+
     /*discografia*/
     .canciones-discografia {
         font-size: 17px;
@@ -461,36 +509,12 @@
 }
 
 @media (max-width: 470px) {
-    /*header*/
-    header {
-        height: 55px;
-    }
-    header nav h1 {
-        font-size: 20px;
-    }
-    header nav div ul {
-        font-size: 8px;
-    }
-    .nav-the-eras-tour {
-        text-align: center;
-        margin: 0;
-    }
-
     /*contacto*/
     .main-contacto .section-contacto-formulario {
-        height: 100vw;
+        height: 110vw;
         h2 {
             font-size: 20px;
         }
-    }
-
-    /*footer*/
-    footer {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        padding: 5px;
-        height: 70px;
     }
 }
 
@@ -531,9 +555,17 @@
     }
 
     /*footer*/
-    footer div ul li {
-        width: 6vw;
-        height: 6vw;
+    footer {
+        .footer_contenedor {
+            .contenedor-iconos {
+                ul {
+                    li {
+                        width: 7vw;
+                        height: 7vw;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -546,7 +578,7 @@
 
     /*contacto*/
     .main-contacto .section-contacto-formulario {
-        height: 110vw;
+        height: 120vw;
     }
 }
 
@@ -566,12 +598,18 @@
 
     /*footer*/
     footer {
-        div p {
-            font-size: 14px;
+       .footer-contenedor-p p {
+            font-size: 15px;
         }
-        div ul li {
-            width: 7vw;
-            height: 7vw;
+        .footer_contenedor {
+            .contenedor-iconos {
+                ul {
+                    li {
+                        width: 8vw;
+                        height: 8vw;
+                    }
+                }
+            }
         }
     }    
 }
@@ -591,16 +629,5 @@
     }
     .primer-seccion {
         margin-top: 25px;
-    }
-
-    /*header*/
-    header {
-        height: 55px;
-    }
-    header nav h1 {
-        font-size: 19px;
-    }
-    header nav div ul {
-        font-size: 7px;
     }
 }

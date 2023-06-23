@@ -3,12 +3,12 @@
 /*IMG PORTADA*/
 .portada {
     .img-index-portada{
-        width: 100%;
+        width: $portadas;
     }
     .parrafo-principal-index {
         font-size: 28px;
         font-weight: lighter;
-        color: #ffffff;
+        color: $texto-blanco;
         text-align: center;
         margin: 10px;
     }
@@ -31,14 +31,12 @@
     , .tercer-parrafo-index {
         font-size: 24px;
         font-weight: lighter;
-        color: #ffffff;
-        border: solid 3px #A791BF;
+        color: $texto-blanco;
+        border: $bordes;
         width: 38vw;
         height: 10vw;
-        display: flex;
-        align-items: center;
-        text-align: center;
         margin: 0;
+        @include flex-center-center
     }
     .div-index-img {
         .img-index-izquierda {

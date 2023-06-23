@@ -1,22 +1,13 @@
 
-
 //IMPORTS
-//IMPORTS GENERAL
-@import "general";
-//IMPORTS HEADER
-@import "header";
-//IMPORTS INDEX
-@import "index";
-//IMPORTS THE ERAS TOUR
-@import "the-eras-tour";
-//IMPORT DISCOGRAFIA
-@import "discografia";
-//IMPORT GALERIA
-@import "galeria";
-//IMPORT CONTACTO
-@import "contacto";
-//IMPORT FOOTER
-@import "footer";
-//IMPORT MEDIA QUERY
-@import "media-query";
-
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/general";
+@import "layout/header";
+@import "pages/index";
+@import "pages/the-eras-tour";
+@import "pages/discografia";
+@import "pages/galeria";
+@import "pages/contacto";
+@import "layout/footer";
+@import "layout/media-query";

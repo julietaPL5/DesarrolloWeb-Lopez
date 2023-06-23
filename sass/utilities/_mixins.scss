@@ -1,0 +1,10 @@
+/*---------------MIXINS---------------*/
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+@mixin margin0-padding0 {
+    margin: 0;
+    padding: 0;
+}

@@ -1,10 +1,11 @@
-/*---------------GENERAL---------------*/
+/*---------------VARIABLES---------------*/ /*---------------MIXINS---------------*/ /*---------------GENERAL---------------*/
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
+  user-select: none;
 }
 
 body {
@@ -31,8 +32,8 @@ header nav div ul {
   list-style: none;
   font-size: 22px;
   font-weight: bold;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
 }
@@ -42,10 +43,6 @@ header nav div ul li {
 }
 header nav div ul li:hover {
   color: #522e78;
-}
-header nav div ul li a {
-  text-decoration-line: none;
-  color: #000000;
 }
 
 /*---------------INDEX---------------*/
@@ -80,13 +77,13 @@ header nav div ul li a {
   font-size: 24px;
   font-weight: lighter;
   color: #ffffff;
-  border: solid 3px #A791BF;
+  border: 3px solid #A791BF;
   width: 38vw;
   height: 10vw;
+  margin: 0;
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 0;
 }
 .contenedor-index .div-index-img .img-index-izquierda {
   margin-right: 15px;
@@ -128,7 +125,7 @@ header nav div ul li a {
   font-weight: lighter;
 }
 
-.div-titulo-theerastour h3 {
+.div-titulo-theerastour h2 {
   color: #ffffff;
   font-size: 24px;
   font-style: italic;
@@ -284,6 +281,7 @@ main .section-discografia-midnights {
 }
 .main-contacto .section-contacto-formulario .formulario div .boton-enviar {
   margin-top: 8px;
+  background-color: #f1e6fb;
 }
 
 /*---------------PIE DE PAGINA---------------*/
@@ -292,22 +290,51 @@ footer {
   color: #000000;
   font-size: 20px;
   font-weight: lighter;
-  height: 80px;
+  height: fit-content;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: column-reverse;
 }
-footer div p {
+footer .footer-contenedor-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .footer-contenedor-p p {
   margin: 0;
 }
-footer div ul {
-  margin: 0;
+footer .footer-contenedor-p .footer-copyright {
+  opacity: 0.7;
+}
+footer .footer_contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer_contenedor .contenedor-iconos ul {
+  margin: 10px 0;
   padding: 0;
 }
-footer div ul li {
+footer .footer_contenedor .contenedor-iconos ul li {
   width: 2vw;
   height: 2vw;
   display: inline-block;
+}
+footer .footer_contenedor .contenedor-nav ul {
+  list-style: none;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+footer .footer_contenedor .contenedor-nav ul li {
+  margin: 0 20px;
+  transition: 0.2s;
+}
+footer .footer_contenedor .contenedor-nav ul li:hover {
+  color: #434343;
 }
 
 /*---------------MEDIA QUERY---------------*/
@@ -374,9 +401,9 @@ footer div ul li {
 }
 @media (max-width: 1300px) {
   /*footer*/
-  footer div ul li {
-    width: 2.5vw;
-    height: 2.5vw;
+  footer .footer_contenedor .contenedor-iconos ul li {
+    width: 3vw;
+    height: 3vw;
   }
 }
 @media (max-width: 1200px) {
@@ -445,7 +472,7 @@ footer div ul li {
   .portada-theerastour p {
     font-size: 22px;
   }
-  .div-titulo-theerastour h3 {
+  .div-titulo-theerastour h2 {
     font-size: 22px;
   }
   .section-theerastour .div-theerastour ul li {
@@ -461,18 +488,23 @@ footer div ul li {
     height: 22vw;
   }
   /*footer*/
-  footer div ul li {
-    width: 3vw;
-    height: 3vw;
+  footer .footer_contenedor .contenedor-iconos ul li {
+    width: 4vw;
+    height: 4vw;
   }
 }
 @media (max-width: 900px) {
   /*header*/
-  header nav h1 {
-    font-size: 30px;
+  header {
+    height: fit-content;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header nav div ul {
-    font-size: 14px;
+    margin-top: 8px;
   }
   /*discografia*/
   .img-discografia {
@@ -480,15 +512,12 @@ footer div ul li {
     width: 12vw;
   }
   /*footer*/
-  footer div p {
+  footer .footer-contenedor-p p {
     font-size: 18px;
   }
-  footer {
-    height: 60px;
-  }
-  footer div ul li {
-    width: 3.5vw;
-    height: 3.5vw;
+  footer .footer_contenedor .contenedor-iconos ul li {
+    width: 5vw;
+    height: 5vw;
   }
 }
 @media (max-width: 808px) {
@@ -514,27 +543,26 @@ footer div ul li {
   .titulo-album {
     margin: 15px 0;
   }
-}
-@media (max-width: 770px) {
   /*footer*/
-  footer {
-    height: 50px;
-    width: 100%;
+  footer .footer_contenedor .contenedor-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
   }
 }
 @media (max-width: 768px) {
   /*header*/
   header nav h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   header nav div ul {
-    font-size: 13px;
+    font-size: 16px;
   }
   /*the eras tour*/
   .portada-theerastour p {
     font-size: 20px;
   }
-  .div-titulo-theerastour h3 {
+  .div-titulo-theerastour h2 {
     font-size: 20px;
   }
   .section-theerastour .div-theerastour ul li {
@@ -547,15 +575,6 @@ footer div ul li {
   }
 }
 @media (max-width: 700px) {
-  /*header*/
-  header {
-    height: 60px;
-  }
-  header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   /*index*/
   .contenedor-index .article-index-parrafo .primer-parrafo-index {
     width: 80vw;
@@ -609,7 +628,7 @@ footer div ul li {
   .portada-theerastour p {
     font-size: 16px;
   }
-  .div-titulo-theerastour h3 {
+  .div-titulo-theerastour h2 {
     font-size: 16px;
   }
   .section-theerastour .div-theerastour ul li {
@@ -617,6 +636,13 @@ footer div ul li {
   }
 }
 @media (max-width: 570px) {
+  /*header*/
+  header nav h1 {
+    font-size: 25px;
+  }
+  header nav div ul {
+    font-size: 13px;
+  }
   /*discografia*/
   .img-discografia {
     width: 17vw;
@@ -624,18 +650,21 @@ footer div ul li {
   }
   /*contacto*/
   .main-contacto .section-contacto-formulario {
-    height: 70vw;
+    height: 80vw;
   }
   /*footer*/
-  footer div p {
+  footer {
+    padding: 5px;
+  }
+  footer .footer-contenedor-p p {
     font-size: 15px;
   }
-  footer {
-    height: 60px;
+  footer .footer_contenedor .contenedor-iconos ul li {
+    width: 6vw;
+    height: 6vw;
   }
-  footer div ul li {
-    width: 5vw;
-    height: 5vw;
+  footer .footer_contenedor .contenedor-nav {
+    font-size: 18px;
   }
 }
 @media (max-width: 540px) {
@@ -643,7 +672,7 @@ footer div ul li {
   .portada-theerastour p {
     font-size: 16px;
   }
-  .div-titulo-theerastour h3 {
+  .div-titulo-theerastour h2 {
     font-size: 16px;
     margin-bottom: 30px;
   }
@@ -659,13 +688,6 @@ footer div ul li {
   }
 }
 @media (max-width: 530px) {
-  /*header*/
-  header nav h1 {
-    font-size: 22px;
-  }
-  header nav div ul {
-    font-size: 10px;
-  }
   /*index*/
   .portada .parrafo-principal-index {
     font-size: 17px;
@@ -684,6 +706,21 @@ footer div ul li {
   }
 }
 @media (max-width: 500px) {
+  /*header*/
+  header nav div {
+    width: 100%;
+  }
+  header nav div ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav div ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #7e6d90;
+  }
   /*discografia*/
   .canciones-discografia {
     font-size: 17px;
@@ -718,34 +755,12 @@ footer div ul li {
   }
 }
 @media (max-width: 470px) {
-  /*header*/
-  header {
-    height: 55px;
-  }
-  header nav h1 {
-    font-size: 20px;
-  }
-  header nav div ul {
-    font-size: 8px;
-  }
-  .nav-the-eras-tour {
-    text-align: center;
-    margin: 0;
-  }
   /*contacto*/
   .main-contacto .section-contacto-formulario {
-    height: 100vw;
+    height: 110vw;
   }
   .main-contacto .section-contacto-formulario h2 {
     font-size: 20px;
-  }
-  /*footer*/
-  footer {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 5px;
-    height: 70px;
   }
 }
 @media (max-width: 425px) {
@@ -780,9 +795,9 @@ footer div ul li {
     height: 52vw;
   }
   /*footer*/
-  footer div ul li {
-    width: 6vw;
-    height: 6vw;
+  footer .footer_contenedor .contenedor-iconos ul li {
+    width: 7vw;
+    height: 7vw;
   }
 }
 @media (max-width: 400px) {
@@ -793,7 +808,7 @@ footer div ul li {
   }
   /*contacto*/
   .main-contacto .section-contacto-formulario {
-    height: 110vw;
+    height: 120vw;
   }
 }
 @media (max-width: 380px) {
@@ -808,12 +823,12 @@ footer div ul li {
     height: 47vw;
   }
   /*footer*/
-  footer div p {
-    font-size: 14px;
+  footer .footer-contenedor-p p {
+    font-size: 15px;
   }
-  footer div ul li {
-    width: 7vw;
-    height: 7vw;
+  footer .footer_contenedor .contenedor-iconos ul li {
+    width: 8vw;
+    height: 8vw;
   }
 }
 @media (max-width: 345px) {
@@ -829,16 +844,6 @@ footer div ul li {
   }
   .primer-seccion {
     margin-top: 25px;
-  }
-  /*header*/
-  header {
-    height: 55px;
-  }
-  header nav h1 {
-    font-size: 19px;
-  }
-  header nav div ul {
-    font-size: 7px;
   }
 }
 

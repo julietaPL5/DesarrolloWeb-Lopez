@@ -4,7 +4,7 @@
     justify-content: center;
     .section-contacto-formulario {
         background-image: radial-gradient(ellipse, #756685, #3e2e4f);
-        color: #ffffff;
+        color: $texto-blanco;
         width: 80vw;
         height: 33vw;
         margin: 95px 0px;
@@ -24,6 +24,7 @@
                 } 
                 .boton-enviar {
                     margin-top: 8px;
+                    background-color: #f1e6fb;
                 }
             }
         }
