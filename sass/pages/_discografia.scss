@@ -30,10 +30,18 @@ main {
         background-image: radial-gradient(ellipse, #A5E4E8, #82bd97);
         @include flex-center-center;
     }
-    .section-discografia-speaknow {
-        background-image: radial-gradient(ellipse, #B7A4BF, #7f6689);
+    .section-discografia-fearless {
+        background-image: radial-gradient(ellipse, #D3BB99, #a18660);
         @include flex-center-center;
     }
+    .section-discografia-speaknow {
+        background-image: radial-gradient(ellipse, #9f7aae, #6a3c7b);
+        @include flex-center-center;
+    }
+    .section-discografia-red {
+        background-image: radial-gradient(ellipse, #B44949, #662b2b);
+        @include flex-center-center;
+    }    
     .section-discografia-1989 {
         background-image: radial-gradient(ellipse, #D6ECF1, #8dc5d1);
         @include flex-center-center;
@@ -52,14 +60,6 @@ main {
     }
     .section-discografia-evermore {
         background-image: radial-gradient(ellipse, #A57156, #735241);
-        @include flex-center-center;
-    }
-    .section-discografia-fearless {
-        background-image: radial-gradient(ellipse, #D3BB99, #a18660);
-        @include flex-center-center;
-    }
-    .section-discografia-red {
-        background-image: radial-gradient(ellipse, #B44949, #662b2b);
         @include flex-center-center;
     }
     .section-discografia-midnights {
